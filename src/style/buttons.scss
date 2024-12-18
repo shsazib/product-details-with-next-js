@@ -1,0 +1,11 @@
+.btn-primary {
+    @apply bg-primary hover:bg-primary/90 transition duration-300 px-5 py-2 font-bold text-white rounded;
+}
+
+.btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 transition duration-300 font-bold px-5 py-3 text-dark rounded-full;
+}
+
+.btn-outline-tertiary {
+    @apply bg-white hover:bg-slate-50 transition duration-300 font-bold px-5 py-2 text-dark rounded border border-border;
+}
