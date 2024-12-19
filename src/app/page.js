@@ -129,8 +129,8 @@ export default function Home() {
 
   // Render Method
   return (
-    <section className="py-20">
-      <div className="w-full xl:container mx-auto px-6">
+    <section className="py-28">
+      <div className="w-full xl:container px-6 2xl:px-28 mx-auto">
         {/* Product Display Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 lg:gap-[60px]">
           {/* Product Image */}
@@ -147,7 +147,7 @@ export default function Home() {
 
           {/* Product Details */}
           <div className="flex-1">
-            <h1 className="text-3xl xl:text-[40px] pb-3">
+            <h1 className="text-3xl xl:text-[40px] leading-[44px] pb-3">
               Classy Modern Smartwatch
             </h1>
             <div className="flex items-center gap-2 pb-5">
@@ -228,6 +228,19 @@ export default function Home() {
               pain was born and I will give you a complete account of the
               system.
             </p>
+
+            <div className="flex items-center gap-10 pb-5">
+              <div>
+                <p>Type</p>
+                <p className="text-base font-bold text-dark">Watch</p>
+              </div>
+              <div>
+                <p>Model Number</p>
+                <p className="text-base font-bold text-dark">
+                  Forerunner 290XT
+                </p>
+              </div>
+            </div>
 
             {/* Color Selection */}
             <div className="pb-5">
@@ -347,11 +360,11 @@ export default function Home() {
           <div className="w-full h-full fixed top-0 left-0 bg-dark/20 flex items-center justify-center">
             <div
               ref={modalRef}
-              className="bg-white rounded-2xl p-5 sm:p-10 mx-4 w-xl overflow-x-auto"
+              className="bg-white rounded-2xl p-5 sm:p-11 mx-4 w-xl overflow-x-auto"
             >
               {/* Modal Header */}
-              <div className="flex justify-between pb-5">
-                <h5 className="text-2xl">Your Cart</h5>
+              <div className="flex justify-between pb-4">
+                <h5 className="text-[22px]">Your Cart</h5>
                 <button
                   onClick={closeModal}
                   className="bg-border/50 hover:bg-border p-1 rounded-full transition duration-300"
@@ -416,10 +429,13 @@ export default function Home() {
 
                         {/* Total Row */}
                         <tr>
-                          <td colSpan="3" className="text-right font-bold">
+                          <td
+                            colSpan="3"
+                            className="text-right font-bold text-base"
+                          >
                             Total:
                           </td>
-                          <td className="text-sm font-bold">
+                          <td className="font-bold">
                             {cartItems.reduce(
                               (totalItems, item) => totalItems + item.quantity,
                               0
@@ -442,7 +458,7 @@ export default function Home() {
 
                   {/* Cart Actions */}
                   {cartItems.length === 0 ? null : (
-                    <div className="flex justify-end items-center gap-6 py-6">
+                    <div className="flex justify-end items-center gap-6 pt-6 pb-6 sm:pb-0">
                       <button className="btn-outline-tertiary">
                         Continue Shopping
                       </button>

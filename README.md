@@ -1,6 +1,10 @@
 # Product Details Page - Add to Cart Functionality
 
-This project implements a **Product Details Page** with an **Add to Cart** feature. Users can view product information and seamlessly add items to their shopping cart. The cart state persists, providing a smooth shopping experience.
+This project implements a **Product Details Page** with an **Add to Cart feature** using *Next.js, Tailwind CSS, and SCSS*. Users can view product information and seamlessly add items to their shopping cart. The cart state persists, providing a smooth shopping experience.
+
+<h2 align=center>
+   <a target="_blank" href="https://github.com/shsazib/product-details-with-next-js" rel="nofollow">👀Live Preview</a>
+</h2>
 
 ## Getting Started
 
