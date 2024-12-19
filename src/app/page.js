@@ -127,12 +127,12 @@ export default function Home() {
     });
   };
 
-  // Render Method
+ 
   return (
-    <section className="py-28">
+    <section className="py-16 lg:py-28">
       <div className="w-full xl:container px-6 2xl:px-28 mx-auto">
         {/* Product Display Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 lg:gap-[60px]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-[60px]">
           {/* Product Image */}
           <div className="flex-1">
             <Image
